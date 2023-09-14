@@ -1,0 +1,51 @@
+body {
+  padding: 25px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timer {
+  font-size: 96px;
+  border: 1px solid black;
+  padding: 16px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+}
+
+button {
+  width: 100%;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button#start-btn {
+  background-color: blue;
+}
+
+button#stop-btn {
+  background-color: red; 
+}
+
+button#reset-btn {
+  background-color: orange;
+}
+
+.title {
+	color: #5C6AC4;
+}

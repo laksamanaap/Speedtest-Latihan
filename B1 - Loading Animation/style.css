@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.loading-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 8px;
+}
+
+.loading-bar1,
+.loading-bar2,
+.loading-bar3,
+.loading-bar4 {
+    width: 12px;
+    height: 56px;
+    background-color: rgb(0, 110, 255);
+    align-items: center;
+    justify-content: center;
+    animation: loading 1s infinite;
+}
+
+.loading-bar2 {
+    animation-delay: 0.2s;
+}
+
+.loading-bar3 {
+    animation-delay: 0.4s;
+}
+
+.loading-bar4 {
+    animation-delay: 0.7s;
+}
+
+@keyframes loading {
+    0%, 100% {
+        height: 84px;
+    }
+
+    50% {
+        height: 56px;
+    }
+}
