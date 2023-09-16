@@ -10,7 +10,7 @@ function updateTimerDisplay() {
 
 document.getElementById("start-btn").addEventListener("click", function () {
     clearInterval(intervalId);
-    intervalId = setInterval(function () {
+    intervalId = setInterval(() => {
         centiseconds++;
         if (centiseconds >= 100) {
             seconds++;
