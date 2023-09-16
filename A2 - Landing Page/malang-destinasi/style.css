@@ -33,6 +33,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 
+#header {
+    background-color: white;
+}
 
 #header .navbar-brand a h1 {
     color: var(--secondary);
