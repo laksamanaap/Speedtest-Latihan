@@ -116,32 +116,6 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 
-#hero form {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 720px;
-    max-width: 80%;
-    background-color: white;
-    padding: 50px;
-    border-radius: 50px;
-}
-
-#hero form input {
-    border-radius: 10px;
-}
-
-#hero form button {
-    background-color: var(--primary);
-    color: white;
-    margin-left: 20px;
-    border-radius: 10px;
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
 #destinations {
     margin-top: 64px;
 }
