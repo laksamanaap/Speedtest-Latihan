@@ -39,6 +39,27 @@ h1,h2,h3,h4,h5,h6,span {
     background-color: white !important;
 }
 
+
+#header .navbar-toggler-icon, #header .navbar-toggler-icon::before, #header .navbar-toggler-icon::after {
+        display: block;
+        width: 32px;
+        height: 4px;
+        background-color: var(--secondary);
+        border-radius: 3px;
+}
+
+#header .navbar-toggler-icon::before {
+    content: "";
+    width: 24px;
+    transform: translate(4px, -8px);
+}
+
+#header .navbar-toggler-icon::after {
+    content: "";
+    width: 24px;
+    transform: translate(4px, 4px);
+}
+
 #header .navbar-brand a h1 {
     color: var(--secondary);
     font-size: 32px;
@@ -154,4 +175,14 @@ h1,h2,h3,h4,h5,h6,span {
     background-color: white;
     padding: 24px;
     border-radius: 24px;
+
+    @media only screen and (max-width:480px)  {
+        margin-top: 32px;
+    }
+}
+
+#cta .form-lastName {
+    @media only screen and (max-width:480px) {
+        margin-top: 16px;
+    }
 }
