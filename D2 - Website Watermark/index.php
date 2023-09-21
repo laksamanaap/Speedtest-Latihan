@@ -2,9 +2,14 @@
 
 function addWatermark($imageURL, $outputPath) {
     $image = imagecreatefromjpeg($imageURL);
+    if (!$image) {
+        print_r("unable to open image");
+    }
 
     $watermark = imagecreatefrompng('logo.png');
-    
+    if (!$watermark) {
+        print_r("unable to open image");
+    }    
 
     $image_width = imagesx($image);
     $image_height = imagesy($image);
