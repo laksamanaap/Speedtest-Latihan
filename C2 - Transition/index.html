@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(var(--x), 1fr);
+            grid-template-rows: repeat(var(--y), 1fr);
+            margin-top: 24px;
+            height: 100% !important;
+        }
+
+        .grid-cell {
+            background-color: transparent; 
+            border: 2px solid yellow; 
+            height: 100%;
+        }
+
+    
+
+    </style>
+</head>
+
+<body>
+    <label for="xInput">X :</label>
+    <input type="number" id="xInput" min="1">
+    <label for="yInput">Y :</label>
+    <input type="number" id="yInput" min="1">
+    <button id="splitButton">Split Image</button>
+    <br>
+
+    <div id="grid-container" style="background-image: url(image.jpg); object-fit: cover;"></div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
